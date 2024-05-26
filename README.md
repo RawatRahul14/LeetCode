@@ -1,4 +1,4 @@
-# The Method
+# The Method we use to solve the questions.
 
 Here's the systematic strategy we'll apply for solving problems:
 1. State the problem clearly. Identify the input and ouput formats.
