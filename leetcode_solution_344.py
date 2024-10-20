@@ -1,12 +1,10 @@
-class Solution(object):
-    def reverseString(self, s):
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
         """
-        :type s: List[str]
-        :rtype: None Do not return anything, modify s in-place instead.
+        Do not return anything, modify s in-place instead.
         """
-
-        i, e = 0, len(s)-1
-        while i < e:
-            s[i], s[e] = s[e], s[i]
-            i, e = i + 1, e - 1
-        
+        left, right = 0, len(s) - 1
+        for _ in range(len(s) // 2):
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
